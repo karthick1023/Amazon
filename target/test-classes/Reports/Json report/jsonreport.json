@@ -1,0 +1,36 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-08T17:18:33.902Z",
+        "line": 3,
+        "name": "Open amazon website and validate invalid data for login functionality",
+        "description": "",
+        "id": "login-functionality-of-amazon;open-amazon-website-and-validate-invalid-data-for-login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12857088400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should be on amzon home page",
+            "match": {
+              "location": "Amazon.user_should_be_on_amzon_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality of amazon",
+    "description": "",
+    "id": "login-functionality-of-amazon",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/login.feature",
+    "tags": []
+  }
+]
