@@ -3,25 +3,85 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-08T17:18:33.902Z",
-        "line": 3,
+        "start_timestamp": "2022-02-09T15:06:44.931Z",
+        "line": 12,
         "name": "Open amazon website and validate invalid data for login functionality",
         "description": "",
-        "id": "login-functionality-of-amazon;open-amazon-website-and-validate-invalid-data-for-login-functionality",
+        "id": "login-functionality-of-amazon;open-amazon-website-and-validate-invalid-data-for-login-functionality;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 12857088400,
-              "status": "passed"
+              "duration": 907899,
+              "status": "skipped"
             },
             "line": 4,
-            "name": "User should be on amzon home page",
+            "name": "User should be on amazon home page",
             "match": {
-              "location": "Amazon.user_should_be_on_amzon_home_page()"
+              "location": "Amazon.user_should_be_on_amazon_home_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8999,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User should navigate to login page and fill \"karthi@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"karthi@gmail.com\"",
+                  "offset": 44
+                }
+              ],
+              "location": "Amazon.user_should_navigate_to_login_page_and_fill(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6100,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User click on continue button",
+            "match": {
+              "location": "Amazon.user_click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5799,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User has to fill \"0987654\" and click login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0987654\"",
+                  "offset": 17
+                }
+              ],
+              "location": "Amazon.user_has_to_fill_and_click_login_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5999,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User should see the error message",
+            "match": {
+              "location": "Amazon.user_should_see_the_error_message()"
+            },
+            "keyword": "Then "
           }
         ]
       }

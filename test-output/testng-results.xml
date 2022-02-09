@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26842" started-at="2022-01-12T10:30:18Z" finished-at="2022-01-12T10:30:45Z">
+  <suite name="Suite" duration-ms="111029" started-at="2022-02-09T15:07:22Z" finished-at="2022-02-09T15:09:13Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.TestRunner@55d56113]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="26842" started-at="2022-01-12T10:30:18Z" finished-at="2022-01-12T10:30:45Z">
-      <class name="org.sele.task.Day3Locators">
-        <test-method status="PASS" signature="myntra()[pri:0, instance:org.sele.task.Day3Locators@42e26948]" name="myntra" duration-ms="26643" started-at="2022-01-12T10:30:18Z" finished-at="2022-01-12T10:30:45Z">
+    <test name="Test" duration-ms="111029" started-at="2022-02-09T15:07:22Z" finished-at="2022-02-09T15:09:13Z">
+      <class name="org.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.runner.TestRunner@55d56113]" name="setUpClass" is-config="true" duration-ms="641" started-at="2022-02-09T15:07:22Z" finished-at="2022-02-09T15:07:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myntra -->
-      </class> <!-- org.sele.task.Day3Locators -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.TestRunner@55d56113]" name="runScenario" duration-ms="109513" started-at="2022-02-09T15:07:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-09T15:09:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open amazon website and validate invalid data for login functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality of amazon"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.runner.TestRunner@55d56113]" name="tearDownClass" is-config="true" duration-ms="649" started-at="2022-02-09T15:09:12Z" finished-at="2022-02-09T15:09:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
